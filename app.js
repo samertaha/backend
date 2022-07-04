@@ -5,4 +5,4 @@ app.get('/', (req, res) => {
   res.json({ message: 'hellow samer from backend' });
 });
 
-app.listen(8000);
+app.listen(3000);

@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.get('/api/samer', function (req, res) {
+app.get('/', function (req, res) {
   res.send({ msg: 'hello' });
 });
 app.use('/api/wordBank', require('./routes/wordBankRoute'));

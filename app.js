@@ -1,15 +1,13 @@
-
-const express = require("express");
-const path = require("path");
-const colors = require("colors");
-const scraper = require("./scraper/scraper");
-
+const express = require('express');
+const path = require('path');
+const colors = require('colors');
+const scraper = require('./scraper/scraper');
 
 const cors = require('cors');
 const dotenv = require('dotenv').config();
 const { errorHandler } = require('./middleware/errorMiddleware');
 const connectDB = require('./config/db');
-// const PORT = process.env.PORT || 8000;
+//const PORT = process.env.PORT || 8000;
 const PORT = 8000;
 connectDB();
 const app = express();

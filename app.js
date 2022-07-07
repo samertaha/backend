@@ -10,7 +10,7 @@ const connectDB = require('./config/db');
 //const PORT = process.env.PORT || 8000;
 const PORT = 5000;
 connectDB();
-const app = express();
+//const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

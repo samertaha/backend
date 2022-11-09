@@ -17,10 +17,10 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', function (req, res) {
   res.send({ msg: 'hello' });
 });
-// app.use('/wordBank', require('./routes/wordBankRoute'));
-// app.use('/matches', require('./routes/userRoutes'));
+app.use('/api/wordBank', require('./routes/wordBankRoute'));
+app.use('/api/matches', require('./routes/userRoutes'));
 
 app.use(errorHandler);
-scraper();
+//scraper();
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
